@@ -10,7 +10,23 @@ h1, h2, h3, h4, h5, h6, p{
      margin: 0;
 }
 body{
-    font-family: 'Open Sans', sans-serif;
+    
     font-family: 'Roboto Slab', serif;
-    font-family: 'Roboto', sans-serif;
+ 
+}
+.page-main{
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header{
+    &_logo{
+        display: block;
+        background-image: url(../img/logo.svg);
+        width: 137px;
+        height: 28px;
+
+    }
+        
+    
 }
