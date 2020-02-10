@@ -22,12 +22,21 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     &_logo{
         display: block;
         background-image: url(../img/logo.svg);
         width: 137px;
         height: 28px;
 
+    }
+    &-list{
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        &__item{
+            margin-left: 15px;
+        }
     }
         
     
