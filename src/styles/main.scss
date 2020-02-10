@@ -5,6 +5,9 @@
 @import "base/fonts";
 @import "base/general";
 @import "../blocks/modules";
+
+$light-color:#fff;
+$accent-color: #65e496;
 h1, h2, h3, h4, h5, h6, p{
      padding: 0;
      margin: 0;
@@ -14,15 +17,23 @@ body{
     font-family: 'Roboto Slab', serif;
  
 }
+.wrap{
+    max-width: 1170px;
+    margin: 0 auto;
+}
 .page-main{
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    color: $light-color;
 }
 .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-top: 50px;
     &_logo{
         display: block;
         background-image: url(../img/logo.svg);
@@ -36,6 +47,9 @@ body{
         justify-content: flex-end;
         &__item{
             margin-left: 15px;
+        }
+        &__item.active{
+            border-bottom: 3px solid $accent-color;
         }
     }
         
